@@ -19,9 +19,20 @@
     padding: 3%;
 }
 
+
+:root{
+    --randomColor0: #b6beb9;
+    --randomColor1: #1c345e;
+
+}
+
 .contactDiv{
     display: flex;
     align-items: center;
+    background: linear-gradient(var(--randomColor0),var(--randomColor1));
+    margin: 5%;
+    padding: 8%;
+    border-radius: 10px;
 }
 
 .todoListDiv{
