@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Michael's TodoList</title>
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!--Main Stylesheet-->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="fullHeight container-fluid">
     <div class="container">
+
         <!--banner-->
         <h1 class="display-6 text-muted">Welcome to simple Todo-List</h1>
         <p class=""><strong>The project is in Alpha stage, so <mark>write me an email</mark> and tell me about what you would like to have as a function</strong>></p>
+
         <!--contact input-->
         <div class="contactDiv">
         <input id="emailInput" type="text" class="form-control"/>
         <button onclick="sendMail()" type="submit" class="btn btn-light">Send Message</button>
         </div>
+
             <!--Todolist Body-->
         <div class="todoListDiv">
         <input placeholder="Add New Todo..." id="myInput" class="form-control">
