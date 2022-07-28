@@ -17,9 +17,34 @@ function addTodoinList() {
     let textNodeTodo = document.createTextNode(todoListInput);
 
     emptyListItem.appendChild(textNodeTodo);
-    todoListUL.appendChild(emptyListItem);
 
     document.getElementById("myInput").value = "" ;
+
+    if(todoListInput === "") {
+        alert("Line is empty, please enter ToDo in the input field");
+    }
+    else {
+        todoListUL.appendChild(emptyListItem);
+    }
 }
 
+function randomColour() {
+    let rgb = "rgba(" ;
+    for(let start = 0 ; start < 3 ; start++ ) {
+        rgb += Math.floor(Math.random() * 255) + "," ;
+        // console.log(rgb);
+    }
+    return rgb
+
+}
+
+function settingNewValue() {
+    let randomValue0 = randomColour() ;
+    let randomValue1 = randomColour() ;
+    document.documentElement.style.setProperty("--randomColour0", randomValue0 + "1)") ;
+    document.documentElement.style.setProperty("--randomColour1", randomValue1 + "1)") ;
+
+}
+
+setInterval(settingNewValue, 1500) ;
 
