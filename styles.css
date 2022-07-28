@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+:root{
+    --randomColor0: rgba(242, 215, 217, 1);
+    --randomColor1: rgba(156, 180, 204, 1);
+}
+
 .fullHeight {
     height: 100vh;
     background: #3A3845;
@@ -23,6 +28,10 @@
 .contactDiv {
     display: flex;
     align-items: center;
+    background: linear-gradient(var(--randomColor0), var(--randomColor1));
+    margin: 5%;
+    padding: 8%;
+    border-radius: 10px;
 }
 
 .todoListDiv {
